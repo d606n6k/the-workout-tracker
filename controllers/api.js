@@ -4,7 +4,15 @@ const db = require("../models");
 // fetch("/api/workouts");
 router.get("/workouts", async (req, res) => {
   try {
-    const lastWorkout = await db.Workout.find({});
+    const lastWorkout = await db.Workout.aggregate([
+      {
+        $addFields: {
+          totalDuration: {
+            $sum: "$exercises.duration",
+          },
+        },
+      },
+    ]);
     res.status(200).json(lastWorkout);
   } catch (error) {
     res.status(500);
