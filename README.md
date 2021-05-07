@@ -1,5 +1,3 @@
-# THESE WILL NEED TO BE UPDATED BEFORE TURN IN
-
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/d606n6k/the-workout-tracker" />
     <img src="https://img.shields.io/github/languages/top/d606n6k/the-workout-tracker"  />
@@ -20,6 +18,10 @@
 </p>
 
 # The Workout Tracker
+
+![The Workout Tracker Homepage Image](./public/images/screenshot.png)
+![The Workout Tracker New Workout Image](./public/images/screenshot2.png)
+![The Workout Tracker Workout Dashboard Image](./public/images/screenshot3.png)
 
 ## Description
 
